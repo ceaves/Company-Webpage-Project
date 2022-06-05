@@ -97,6 +97,10 @@ nav {
     border: 1px solid #00095b;
 }
 
+.electric .button{
+    margin-left: 1rem;
+}
+
 .mache {
     background-image: url("images/mache.jpg");
     background-size: cover;
@@ -147,7 +151,6 @@ nav {
 }
 
 .carousel .button{
-    text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 0.75rem;
@@ -159,14 +162,12 @@ nav {
     background-color: #00095b;
     color: white;
     width: fit-content;
-    min-height: 2rem;
-    max-height:fit-content;
+    height: 2rem;
     line-height: 2rem;
     text-align: center;
     align-content: center;
     border-radius: 4rem;
     margin-top: 1rem;
-    margin-left: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -176,3 +177,28 @@ nav {
     transform: scale(1.05);
     transition: 0.125s;
 }
+
+@media only screen and (max-width: 766px){
+    .button p {
+        display: none;
+    }
+
+    .carousel-tagline {
+        height: 8rem;
+    }
+
+    .button{
+        background-image: url("images/info-icon-6.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+
+    .button:hover {
+        background-color:blanchedalmond;
+    }
+
+    .navbar-right{
+        display: none;
+    }
+} 
