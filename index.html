@@ -1,88 +1,178 @@
-<!DOCTYPE html>
+/* Fonts */
+@font-face {
+    font-family: "Antenna Cond Medium";
+    src: url("fonts/antenna-cond-medium.woff");
+}
 
-<html>
-  <head>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css" type="text/css">
-    <link rel="stylesheet" href="styles.css" type="text/css">
-  </head>
-  <nav>
-      
-    <div class="navlogo">
-      <img src="images/Ford_logo_flat.svg.png"/>
-    </div>
+@font-face {
+    font-family: "Antenna Cond";
+    src: url("fonts/antenna-cond-regular.woff");
+}
 
-    <div class="navbar-items">
-        <div class="navbar-left">
-          <ul>
-            <li>Electric</li>
-            <li>All Vehicles</li>
-          </ul>
-        </div>
+@font-face {
+    font-family: "Antenna Medium";
+    src: url("fonts/antenna-medium.woff");
+}
 
-        <div class="navbar-right">
-          <ul class="navbar-right">
-            <li>Profile</li>
-            <li>Finance</li>
-            <li>Support & Service</li>
-          </ul>
-        </div>
+@font-face {
+    font-family: "Antenna Bold";
+    src: url("fonts/bold.woff");
+}
 
-    </div>
-  </nav>
+@font-face {
+    font-family: "Antenna Light";
+    src: url("fonts/light.woff");
+}
 
-  <body>
+@font-face {
+    font-family: "Antenna Regular";
+    src: url("fonts/regular.woff");
+}
 
-    <div class="electric">
-      <div class="mache">
-        <div class="button">
-          <p>Discover More about Mustang Mach-E</p>
-        </div> 
-      </div>
-      <div class="lightning">
-        <div class="button">
-          <p>Discover More about F150 Lightning</p>
-        </div>          
-      </a>
-      </div>
-    </div>
+/*Universal */
+html {
+    font-family: "Antenna Regular";
+    font-size: 16px;
 
-    <div class="carousel">
-      <div class="carousel-item">
-        <div class="carousel-image">
-          <img src="images/cq5dam.web.768.768.jpeg"/>
-        </div>
-        <div class="carousel-tagline">
-          <p>Gear Up. Head Out.</p>
-        </div>
-        <div class="button">
-          <p>Accessorize Your Ride</p>
-        </div>
-        
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-image">
-          <img src="images/22_FRD_F15_49152_V3_PK.tif.jpeg"/>
-        </div>
-        <div class="carousel-tagline">
-          <p>Introducing Alexa, built-in</p>
-        </div>
-        <div class="button">
-          <p>Connect With Alexa Built In</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-image">
-          <img src="images/MISNGGLK0049_StrikeAnywhere_Hero_v2_03_RGB.tif.jpeg"/>
-        </div>
-        <div class="carousel-tagline">
-          <p>F-150 Lightning: <sup>TM</sup> Strike Anywhere</p>
-        </div>
-        <div class="button">
-          <p>Try It Now</p>
-        </div>
-      </div>
-    </div>
+}
 
-  </body>
-</html>
+body { 
+    padding-top: 5rem;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    font-family: "Antenna Light";
+    display: flex;
+    font-size: 0.5rem;
+    height: 5rem;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    border-bottom: 2px solid lightgrey;
+    background-color: white;
+}
+
+.navlogo {
+    text-align: center;
+    width: 8rem;
+    overflow: hidden;
+}
+
+.navlogo img{
+    height: 2rem;
+}
+
+.navbar-items{
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar-right{
+    margin-left: auto;
+
+}
+
+.navbar-items ul li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.navbar-items li:hover{
+    color: #1700f4;
+}
+
+/* Main Content */
+
+.electric{
+    display: flex;
+    width: 100%;
+    border: 1px solid #00095b;
+}
+
+.mache {
+    background-image: url("images/mache.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 18.75rem;
+    width: 49.99%;
+
+}
+
+.lightning {
+    background-image: url("images/lightning.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 18.75rem;
+    width: 49.99%;
+
+}
+
+.carousel {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: "Antenna Regular";
+    width: 100%;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.carousel-item{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px 1px;
+    margin: 1rem;
+    width: 30%;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-tagline{
+    padding-top: 0.5rem;
+    padding-left: 0.2rem;
+    color: #00095b;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.carousel .button{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    align-self: center;
+}
+
+/* Buttons */
+.button{
+    background-color: #00095b;
+    color: white;
+    width: fit-content;
+    min-height: 2rem;
+    max-height:fit-content;
+    line-height: 2rem;
+    text-align: center;
+    align-content: center;
+    border-radius: 4rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.button:hover{
+    background-color: #1700f4;
+    transform: scale(1.05);
+    transition: 0.125s;
+}
