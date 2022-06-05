@@ -55,13 +55,13 @@ nav {
     background-color: white;
 }
 
-.navlogo {
+.nav .logo {
     text-align: center;
     width: 8rem;
     overflow: hidden;
 }
 
-.navlogo img{
+.logo img{
     height: 2rem;
 }
 
@@ -87,6 +87,7 @@ nav {
 
 .navbar-items li:hover{
     color: #1700f4;
+    cursor: pointer;
 }
 
 /* Main Content */
@@ -157,6 +158,43 @@ nav {
     align-self: center;
 }
 
+/* Footer */
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+}
+
+.footer .logo{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: 7rem;
+}
+
+.footer-links {
+    width: 65%;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    font-size: 0.6rem;
+}
+
+.footer-links ul li{
+    flex-direction: row;
+    padding: 0.5rem;
+}
+
+.footer-links ul li:hover{
+    color:#00095b;
+    cursor: pointer;
+}
+
 /* Buttons */
 .button{
     background-color: #00095b;
@@ -176,6 +214,7 @@ nav {
     background-color: #1700f4;
     transform: scale(1.05);
     transition: 0.125s;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 766px){
@@ -200,5 +239,10 @@ nav {
 
     .navbar-right{
         display: none;
+    }
+
+    .footer-links ul {
+        display: block;
+        padding-top: 2rem;
     }
 } 
