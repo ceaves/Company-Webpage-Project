@@ -217,7 +217,41 @@ nav {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 766px){
+@media only screen and (max-width: 440px){
+    .carousel{
+        flex-direction: column;
+    }
+    
+    .carousel-item{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+    }
+
+    .navbar-right{
+        display: none;
+    }
+
+    .footer-links ul {
+        display: block;
+        padding-top: 2rem;
+    }
+
+    .electric .button{
+        background-color: transparent;
+    }
+
+    .electric .mache{
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+    }
+    
+    .electric .lightning{
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+    }
+
+}
+
+@media only screen and (max-width: 766px) and (min-width: 441px){
     .button p {
         display: none;
     }
@@ -246,3 +280,4 @@ nav {
         padding-top: 2rem;
     }
 } 
+
