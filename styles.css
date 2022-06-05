@@ -142,14 +142,15 @@ nav {
     padding-top: 0.5rem;
     padding-left: 0.2rem;
     color: #00095b;
-    height: 2rem;
+    height: 4rem;
+    overflow: hidden;
 }
 
 .carousel .button{
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 0.75rem;
     align-self: center;
 }
 
